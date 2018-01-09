@@ -1,21 +1,12 @@
 'use strict';
 
 function abbrevName(name){
-
-    // code away
-
+  var nameArr = name.split(' ');
+  var intArr = [];
+  for (var i = 0; i < nameArr.length; i++){
+    var initial = nameArr[i].slice(0,1);
+    initial = initial.toUpperCase();
+    intArr.push(initial);
+  }
+  return(intArr.join('.'));
 }
-
-
-
-
-
-/*Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
-
-The output should be two capital letters with a dot seperating them.
-
-It should look like this:
-
-Sam Harris => S.H
-
-Patrick Feeney => P.F*/
