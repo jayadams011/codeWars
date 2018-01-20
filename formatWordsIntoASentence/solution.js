@@ -1,12 +1,8 @@
 function formatWords(words){
-    var sentence1 = '';
-    if (words.length === 1) {
-    sentence1 = words[0];
-    } else if (words.length === 2) {
-    sentence1 = words.join(' and ');
-    } else if (words.length > 2) {
-    sentence1 = words.slice(0,-1).join(', ') + ', and ' + words.slice(-1);
-    }
-    return sentence1;
-    }
-    
+    if (!words ){return false}
+       return words.filter(word => word.length>0).join().replace(/,([^,]*)$/, ' and $1').replace(/,/g, ', ')
+       }
+
+
+
+       console.log(formatWords(['cat', 'dog',''])); // should return cat and dog
