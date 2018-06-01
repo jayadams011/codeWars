@@ -1,0 +1,6 @@
+[
+  "test_sum_of_positives.py::test_all_positive",
+  "test_sum_of_positives.py::test_with_one_neg",
+  "test_sum_of_positives.py::test_with_multi_negs",
+  "test_sum_of_positives.py::test_empty_arr"
+]
